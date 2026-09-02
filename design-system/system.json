@@ -71,11 +71,30 @@
   ],
 
   "typography": {
-    "display": "bold condensed or wide grotesk, uppercase; the headline anchors a corner or crosses a fragment",
-    "support": "small monospaced or plain grotesk — dates, an index number, a large page number, and a rotated vertical edge label",
+    "display_voices": [
+      {"id": "condensed_grotesk", "name": "Condensed Grotesk", "desc": "bold condensed or compressed grotesk, uppercase", "feel": "strong, high-contrast (default)"},
+      {"id": "wide_grotesk", "name": "Wide / Extended Grotesk", "desc": "wide or extended grotesk, uppercase", "feel": "roomy, airy, big"},
+      {"id": "serif_display", "name": "High-contrast Serif Display", "desc": "high-contrast display serif, roman or italic", "feel": "elegant, editorial, literary"},
+      {"id": "slab_serif", "name": "Slab Serif", "desc": "heavy slab serif, uppercase", "feel": "solid, vintage-print, poster"}
+    ],
+    "display_default": "condensed_grotesk",
+    "display": "one display voice chosen from display_voices at the Steering step (default condensed_grotesk), uppercase; the headline anchors a corner or crosses a fragment",
+    "support": "small monospaced or plain grotesk — see `annotations`",
     "scale_ratio": "5:1..8:1",
     "orientation": "one orientation event max — the rotated vertical edge text is the usual one",
-    "note": "One display voice. Numbers (dates, index, page) are part of the look; keep them small except one large page-style figure."
+    "note": "One display voice per poster, chosen at Steering; never mix two display faces."
+  },
+
+  "annotations": {
+    "note": "Page number, dates, index and edge label are DECIDED at the Steering step, not left to chance — the image model would otherwise invent values every run (this is why they vary between generations). The user sets exact values, asks for model-invented generic marks, or turns them off.",
+    "controls": {
+      "page_number": "user value | random | off",
+      "dates": "user value | random | off",
+      "index": "user value | random | off",
+      "edge_label": "user text (generic) | random | off"
+    },
+    "default": "ask",
+    "discipline": "When invented, they are GENERIC editorial marks only — never a real brand, @handle, URL, or a date presented as a real event."
   },
 
   "treatment": "greyscale photographic collage — torn photo fragments, taped strips, overlapping layers, subtle photocopy grain and print texture; flat spot shapes behind",
@@ -88,6 +107,7 @@
     "One diagonal or orientation event, not several competing angles.",
     "A faint grid plus a few register marks give the analog print feel — do not overfill with marks.",
     "All annotations (dates, index, edge text, page number) are GENERIC editorial marks — never a real brand, handle, or URL, and never invented as if factual.",
+    "Real-world objects (cars, street signs, storefronts, packaging) must not show real logos, brand badges, license plates, or readable trademarks — keep them generic, plain, or obscured. Image models leak these; add them to the negatives every time.",
     "Torn/taped edges and grain carry the handmade feel; avoid glossy clean vector flatness."
   ]
 }

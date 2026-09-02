@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1600" viewBox="0 0 1000 1600" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0V18" fill="none" stroke="#D8D2C2" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- ground -->
+  <rect width="1000" height="1600" fill="#F4F0E7"/>
+
+  <!-- masthead -->
+  <text x="60" y="72" font-family="monospace" font-size="13" letter-spacing="3" fill="#2C46C8">COLLAGE-POSTER</text>
+  <text x="60" y="126" font-size="52" font-weight="bold" letter-spacing="-1.5" fill="#141109">STYLE SYSTEM</text>
+  <text x="940" y="72" font-family="monospace" font-size="12" letter-spacing="1.5" fill="#928A79" text-anchor="end">GREYSCALE + 2 FLAT SPOTS</text>
+  <text x="940" y="92" font-family="monospace" font-size="12" letter-spacing="1.5" fill="#928A79" text-anchor="end">TORN · TAPED · MONO ANNOTATIONS</text>
+  <rect x="60" y="150" width="880" height="3" fill="#141109"/>
+
+  <!-- 01 SUBSTRATES -->
+  <text x="60" y="205" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">01</text>
+  <text x="96" y="205" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">SUBSTRATES</text>
+  <text x="940" y="205" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">PAPER IS AN ACTIVE COLOUR</text>
+  <line x1="60" y1="220" x2="940" y2="220" stroke="#D8D2C2" stroke-width="1"/>
+
+  <g>
+    <rect x="60" y="240" width="270" height="90" fill="#FCFCFA" stroke="#D8D2C2"/>
+    <text x="72" y="360" font-size="14" font-weight="bold" fill="#141109">Bright White</text>
+    <text x="72" y="380" font-family="monospace" font-size="12" fill="#4B463B">#FCFCFA</text>
+
+    <rect x="365" y="240" width="270" height="90" fill="#F4F0E7" stroke="#D8D2C2"/>
+    <text x="377" y="360" font-size="14" font-weight="bold" fill="#141109">Warm Ivory</text>
+    <text x="377" y="380" font-family="monospace" font-size="12" fill="#4B463B">#F4F0E7</text>
+
+    <rect x="670" y="240" width="270" height="90" fill="#ECEAE3" stroke="#D8D2C2"/>
+    <text x="682" y="360" font-size="14" font-weight="bold" fill="#141109">Newsprint Grey</text>
+    <text x="682" y="380" font-family="monospace" font-size="12" fill="#4B463B">#ECEAE3</text>
+  </g>
+
+  <!-- 02 SPOT PALETTES -->
+  <text x="60" y="445" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">02</text>
+  <text x="96" y="445" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">SPOT PALETTES</text>
+  <text x="940" y="445" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">≤2 FLAT SPOTS · NEVER TINT THE PHOTOS</text>
+  <line x1="60" y1="460" x2="940" y2="460" stroke="#D8D2C2" stroke-width="1"/>
+
+  <text x="60" y="490" font-family="monospace" font-size="11" letter-spacing="1.5" fill="#928A79">HOUSE-WARM</text>
+  <g>
+    <!-- cobalt+terracotta -->
+    <rect x="60" y="500" width="135" height="48" fill="#2148B8"/>
+    <rect x="195" y="500" width="135" height="48" fill="#C65F38"/>
+    <text x="60" y="566" font-size="12" fill="#4B463B">Cobalt + Terracotta</text>
+    <!-- aubergine+gold -->
+    <rect x="365" y="500" width="135" height="48" fill="#63365F"/>
+    <rect x="500" y="500" width="135" height="48" fill="#9C7A3C"/>
+    <text x="365" y="566" font-size="12" fill="#4B463B">Aubergine + Gold</text>
+    <!-- terracotta mono -->
+    <rect x="670" y="500" width="270" height="48" fill="#C65F38"/>
+    <text x="670" y="566" font-size="12" fill="#4B463B">Terracotta (single spot)</text>
+  </g>
+
+  <text x="60" y="606" font-family="monospace" font-size="11" letter-spacing="1.5" fill="#928A79">COLLAGE-BRIGHT</text>
+  <g>
+    <rect x="60" y="616" width="135" height="48" fill="#E3B23C"/>
+    <rect x="195" y="616" width="135" height="48" fill="#C0392B"/>
+    <text x="60" y="682" font-size="12" fill="#4B463B">Mustard + Brick</text>
+
+    <rect x="365" y="616" width="135" height="48" fill="#2148B8"/>
+    <rect x="500" y="616" width="135" height="48" fill="#E0503C"/>
+    <text x="365" y="682" font-size="12" fill="#4B463B">Cobalt + Coral</text>
+
+    <rect x="670" y="616" width="135" height="48" fill="#E3B23C"/>
+    <rect x="805" y="616" width="135" height="48" fill="#2148B8"/>
+    <text x="670" y="682" font-size="12" fill="#4B463B">Mustard + Cobalt</text>
+  </g>
+
+  <!-- 03 ELEMENTS -->
+  <text x="60" y="742" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">03</text>
+  <text x="96" y="742" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">ELEMENT KIT</text>
+  <text x="940" y="742" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">1–2 PER POSTER · EACH WITH A ROLE</text>
+  <line x1="60" y1="757" x2="940" y2="757" stroke="#D8D2C2" stroke-width="1"/>
+
+  <!-- row of element icons: 5 per row, 2 rows -->
+  <g font-family="monospace" font-size="10" letter-spacing="0.5" fill="#4B463B">
+    <!-- torn fragment -->
+    <rect x="60" y="775" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <path d="M78 793 l40 -4 l38 6 l-3 46 l-40 4 l-36 -6 z" fill="#2E2E30"/>
+    <text x="60" y="875">Torn fragment</text>
+
+    <!-- taped strip -->
+    <rect x="222" y="775" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <rect x="250" y="800" width="84" height="30" fill="#2E2E30"/>
+    <rect x="242" y="806" width="20" height="14" fill="#9C7A3C" opacity="0.6"/>
+    <rect x="322" y="806" width="20" height="14" fill="#9C7A3C" opacity="0.6"/>
+    <text x="222" y="875">Taped strip</text>
+
+    <!-- diagonal slab -->
+    <rect x="384" y="775" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <rect x="440" y="782" width="28" height="66" fill="#2E2E30" transform="rotate(28 454 815)"/>
+    <text x="384" y="875">Diagonal slab</text>
+
+    <!-- spot circle -->
+    <rect x="546" y="775" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <circle cx="616" cy="815" r="26" fill="#E0503C"/>
+    <text x="546" y="875">Spot circle</text>
+
+    <!-- spot band -->
+    <rect x="708" y="775" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <rect x="726" y="805" width="104" height="20" fill="#E3B23C"/>
+    <text x="708" y="875">Spot band</text>
+
+    <!-- faint grid -->
+    <rect x="60" y="895" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <rect x="78" y="905" width="104" height="60" fill="url(#grid)"/>
+    <text x="60" y="995">Faint grid</text>
+
+    <!-- register marks -->
+    <rect x="222" y="895" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <g stroke="#2C46C8" stroke-width="2">
+      <path d="M250 918 l10 10 M260 918 l-10 10"/>
+      <path d="M320 945 l10 10 M330 945 l-10 10"/>
+    </g>
+    <text x="222" y="995">Register x</text>
+
+    <!-- outline rectangle -->
+    <rect x="384" y="895" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <rect x="412" y="912" width="84" height="46" fill="none" stroke="#2E2E30" stroke-width="1.5"/>
+    <text x="384" y="995">Outline rect</text>
+
+    <!-- page number -->
+    <rect x="546" y="895" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <text x="600" y="952" font-family="Helvetica" font-size="46" font-weight="bold" fill="#2E2E30">07</text>
+    <text x="546" y="995">Page number</text>
+
+    <!-- rotated edge text -->
+    <rect x="708" y="895" width="140" height="80" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <text x="740" y="965" font-family="monospace" font-size="12" letter-spacing="2" fill="#2E2E30" transform="rotate(-90 740 965)">EDITION</text>
+    <text x="708" y="995">Rotated edge</text>
+  </g>
+
+  <!-- 04 COMPOSITIONS -->
+  <text x="60" y="1055" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">04</text>
+  <text x="96" y="1055" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">COMPOSITIONS</text>
+  <text x="940" y="1055" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">KEEP 35–50% BREATHING PAPER</text>
+  <line x1="60" y1="1070" x2="940" y2="1070" stroke="#D8D2C2" stroke-width="1"/>
+
+  <g>
+    <!-- central stack -->
+    <rect x="60" y="1090" width="180" height="130" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <circle cx="150" cy="1140" r="22" fill="#63365F"/>
+    <rect x="132" y="1128" width="60" height="44" fill="#2E2E30"/>
+    <rect x="120" y="1198" width="80" height="8" fill="#141109"/>
+    <text x="60" y="1240" font-size="13" font-weight="bold" fill="#141109">Central stack</text>
+    <text x="60" y="1258" font-family="monospace" font-size="10" fill="#4B463B">subject 55–70 · centre</text>
+
+    <!-- diagonal cross -->
+    <rect x="410" y="1090" width="180" height="130" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <circle cx="480" cy="1130" r="20" fill="#E3B23C"/>
+    <rect x="470" y="1100" width="26" height="110" fill="#2E2E30" transform="rotate(26 483 1155)"/>
+    <rect x="424" y="1200" width="70" height="8" fill="#141109"/>
+    <text x="410" y="1240" font-size="13" font-weight="bold" fill="#141109">Diagonal cross</text>
+    <text x="410" y="1258" font-family="monospace" font-size="10" fill="#4B463B">a slab cuts across</text>
+
+    <!-- scattered field -->
+    <rect x="760" y="1090" width="180" height="130" fill="#FBFAF4" stroke="#D8D2C2"/>
+    <circle cx="800" cy="1120" r="14" fill="#2148B8"/>
+    <rect x="850" y="1110" width="40" height="34" fill="#2E2E30"/>
+    <rect x="790" y="1160" width="34" height="30" fill="#2E2E30"/>
+    <circle cx="885" cy="1180" r="12" fill="#C65F38"/>
+    <text x="760" y="1240" font-size="13" font-weight="bold" fill="#141109">Scattered field</text>
+    <text x="760" y="1258" font-family="monospace" font-size="10" fill="#4B463B">fragments spread · gaps</text>
+  </g>
+
+  <!-- 05 RATIOS -->
+  <text x="60" y="1305" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">05</text>
+  <text x="96" y="1305" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">RATIOS</text>
+  <text x="940" y="1305" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">OFFERED AT EVERY RUN</text>
+  <line x1="60" y1="1318" x2="940" y2="1318" stroke="#D8D2C2" stroke-width="1"/>
+
+  <g font-family="monospace" font-size="10" fill="#4B463B">
+    <rect x="60" y="1332" width="21" height="28" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="88" y="1351">3:4</text>
+    <rect x="150" y="1332" width="18" height="28" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="175" y="1351">2:3</text>
+    <rect x="235" y="1334" width="22" height="26" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="264" y="1351">4:5</text>
+    <rect x="320" y="1334" width="26" height="26" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="353" y="1351">1:1</text>
+    <rect x="410" y="1330" width="17" height="30" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="434" y="1351">9:16</text>
+    <rect x="510" y="1338" width="34" height="19" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="551" y="1351">16:9</text>
+    <rect x="625" y="1339" width="36" height="18" fill="none" stroke="#141109" stroke-width="1.5"/>
+    <text x="668" y="1351">1.91:1</text>
+    <rect x="760" y="1338" width="30" height="21" fill="none" stroke="#2C46C8" stroke-width="1.5"/>
+    <text x="797" y="1351" fill="#2C46C8">Substack ~1.4:1</text>
+  </g>
+
+  <!-- 06 TYPOGRAPHY -->
+  <text x="60" y="1420" font-family="monospace" font-size="14" font-weight="bold" fill="#2C46C8">06</text>
+  <text x="96" y="1420" font-size="20" font-weight="bold" letter-spacing="0.5" fill="#141109">HEADLINE VOICES</text>
+  <text x="940" y="1420" font-family="monospace" font-size="11" letter-spacing="1" fill="#928A79" text-anchor="end">ONE PER POSTER · PICK AT STEERING</text>
+  <line x1="60" y1="1435" x2="940" y2="1435" stroke="#D8D2C2" stroke-width="1"/>
+
+  <g>
+    <!-- condensed grotesk -->
+    <text x="60" y="1500" font-family="'Arial Narrow', Helvetica, sans-serif" font-size="34" font-weight="bold" fill="#141109" transform="scale(0.86,1)" transform-origin="60 1500">KNOWLEDGE</text>
+    <text x="60" y="1530" font-family="monospace" font-size="12" fill="#141109">Condensed Grotesk</text>
+    <text x="60" y="1548" font-family="monospace" font-size="10" fill="#928A79">strong · high-contrast (default)</text>
+
+    <!-- wide grotesk -->
+    <text x="540" y="1500" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="bold" letter-spacing="3" fill="#141109">OPEN</text>
+    <text x="540" y="1530" font-family="monospace" font-size="12" fill="#141109">Wide / Extended Grotesk</text>
+    <text x="540" y="1548" font-family="monospace" font-size="10" fill="#928A79">roomy · airy · big</text>
+
+    <!-- serif display -->
+    <text x="60" y="1585" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-style="italic" fill="#141109">Story</text>
+    <text x="170" y="1585" font-family="monospace" font-size="12" fill="#141109">High-contrast Serif Display</text>
+    <text x="170" y="1571" font-family="monospace" font-size="10" fill="#928A79">elegant · editorial · literary</text>
+
+    <!-- slab serif -->
+    <text x="540" y="1585" font-family="Rockwell, 'Roboto Slab', Georgia, serif" font-size="30" font-weight="bold" fill="#141109">PRINT</text>
+    <text x="650" y="1585" font-family="monospace" font-size="12" fill="#141109">Slab Serif</text>
+    <text x="650" y="1571" font-family="monospace" font-size="10" fill="#928A79">solid · vintage-print</text>
+  </g>
+</svg>

@@ -9,7 +9,7 @@ A **single-style, parametric generator**: the style is fixed, while the subject,
 - Greyscale photographic collage — torn fragments, taped strips, overlapping layers, photocopy grain.
 - **At most two flat spot colours** as shapes (circles, bands) behind the fragments — never tinting the photos.
 - Faint modular grid, small "x" register marks, thin outline rectangles, a large page-style number.
-- Bold condensed grotesk headline + small monospaced annotations (dates, index, a rotated edge label).
+- A headline in one of four display voices (condensed grotesk / wide grotesk / serif display / slab) + small monospaced annotations you can set, randomise, or omit.
 
 It produces a final image-generation prompt (and the image itself when an image tool is available). It does **not** clone any specific existing poster.
 
@@ -35,14 +35,17 @@ All parameters live in [`design-system/system.json`](design-system/system.json) 
 | **Spot palettes** (6) | *house-warm*: cobalt+terracotta, aubergine+gold, terracotta-mono · *collage-bright*: mustard+brick, cobalt+coral, mustard+cobalt |
 | **Elements** (10) | torn photo fragment, taped strip, diagonal slab, flat spot circle, flat spot band, faint grid, register marks, outline rectangle, page number, rotated edge text |
 | **Compositions** (3) | central stack · diagonal cross · scattered field |
+| **Headline voices** (4) | condensed grotesk · wide grotesk · serif display · slab serif |
 | **Ratios** (8) | 3:4, 2:3, 4:5, 1:1, 9:16, 16:9, 1.91:1, and a Substack cover (~1.4:1, 1456×1048) |
 
 The greyscale photographic base is a **constant**; colour lives only in the flat spot shapes.
 
+![collage-poster style system](style-system.svg)
+
 ## How it works
 
 1. **Inputs** — subject, headline/labels, intent/ratio.
-2. **Steering** — before composing, the skill surfaces the meaningful choices (spot palette, composition, substrate, **ratio**) as a picker with a recommended default, so you steer instead of getting a black box.
+2. **Steering** — before composing, the skill surfaces the meaningful choices (**headline voice**, spot palette, composition, substrate, **ratio**, and the **numbers/dates** — set them, randomise, or omit) as a picker with a recommended default, so you steer instead of getting a black box.
 3. **Assembly** — resolves the palette, composition ratios, and element mix from `system.json`; keeps 35–50% breathing paper and one orientation event.
 4. **Prompt compiler** — five compact paragraphs describing only visible outcomes.
 5. **Self-check** — a one-line gate (greyscale photos, ≤2 spots, breathing white, generic annotations, verbatim headline).
@@ -51,6 +54,28 @@ The greyscale photographic base is a **constant**; colour lives only in the flat
 
 - Recombines into a new composition every time; never reproduces a specific poster's layout, lettering, or marks.
 - All annotations (dates, index, edge labels, page numbers) are **generic** editorial marks — never a real brand, handle, URL, or a fact invented as if true.
+
+## Examples
+
+Sample prompts the skill produces (paste into any image tool). Each uses a different palette, composition, and headline voice.
+
+**Literary** — aubergine + gold, warm ivory, scattered field, condensed grotesk headline:
+
+```text
+Vertical 3:4 collage poster, warm ivory paper #F4F0E7. Greyscale photographic collage — a girl in a high-collar coat, an antique clothbound novel, and a copper-engraved camellia — as torn taped fragments with photocopy grain. Two flat spot colours only: aubergine #63365F and muted gold #9C7A3C, as flat circles and a band behind the photos, never tinting them. Scattered fragment field, ~45% breathing paper; a faint grid, small "x" register marks, a large page number. Bold condensed grotesk headline "KNOWLEDGE BECOMES POWER" left-anchored; small mono labels and a rotated edge tag. Torn/taped edges, matte print. No colour in the photos, no third spot, no real logos/brands/URLs.
+```
+
+**City** — mustard + cobalt, newsprint grey, diagonal cross, condensed grotesk headline:
+
+```text
+Vertical 3:4 collage poster, newsprint-grey paper #ECEAE3. Greyscale photographic collage of a city — a landmark tower, a street scene, a taxi — torn and taped with print grain. Two flat spots only: mustard #E3B23C and cobalt #2148B8, as flat circles and bands behind the photos. Diagonal-cross composition: one photo slab cuts across; ~35% breathing paper; faint grid, register marks, a large page number. Bold condensed grotesk "NEW YORK" bottom-left crossed by the slab; small mono dates and a rotated edge label. Torn edges, matte. Photos stay greyscale, no third spot, no real logos/brands/URLs, no license plates.
+```
+
+**Botanical** — cobalt + terracotta, cool white, central stack, serif display headline:
+
+```text
+Vertical 3:4 collage poster, cool-white paper #F7F7F4. Greyscale photographic collage — a rabbit's-foot fern as an X-ray silhouette, an antique botany book, a microscope, gardening tools — torn taped fragments with grain. Two flat spots only: cobalt #2148B8 and terracotta #C65F38, as flat circles behind the photos. Central-stack composition, ~40% breathing white; faint grid, "x" marks, a large page number. Elegant high-contrast serif display headline "THE HIDDEN LIFE OF PLANTS" anchored to a corner; small mono scientific marks (specimen no., "40×", plate no.) and a rotated edge tag. Torn/taped edges, matte. Greyscale photos only, no third spot, no real logos/brands/trademarks.
+```
 
 ## Related skills
 

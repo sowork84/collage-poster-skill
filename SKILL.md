@@ -25,6 +25,8 @@ After the inputs are known and the recipe is resolved to its defaults — but **
 
 - **Spot palette** — which `spot_palettes` entry (house-warm set vs collage-bright set; or a specific pair).
 - **Composition** — `central_stack` / `diagonal_cross` / `scattered_field`.
+- **Headline voice** — which `typography.display_voices` entry (condensed grotesk / wide grotesk / serif display / slab serif). Default condensed grotesk; offer it so the headline isn't always the same face.
+- **Annotations (numbers/dates)** — for the page number, dates, index and edge label, ask whether to set exact values, let the model invent generic marks, or turn them off (`annotations.controls`). Without this the model invents different numbers every run.
 - **Substrate** — bright white / warm ivory / newsprint grey, when it matters.
 - **Ratio** — always offer as a fork, with the presets: portrait (3:4 / 2:3), social (4:5 / 1:1 / 9:16), landscape (16:9 / 1.91:1), and **Substack cover (~1.4:1, 1456×1048)**. Recommend the intent's default (portfolio → 3:4; feed → 1:1 or 4:5; story/reel → 9:16; banner/slide → 16:9; Substack post → substack_cover). Adapt the composition to the chosen ratio per `ratios.note` — for landscape/Substack spread the collage horizontally and move the headline to a side; centre for square; stack vertically for 9:16.
 
@@ -38,8 +40,9 @@ Resolve from `system.json`:
 - **Spot palette** — at most two flat spot colours (circles, bands, blocks) behind or beside the greyscale fragments; never tint the photos.
 - **Composition** — take the chosen entry's `subject_percent`, `empty_percent`, `anchor`, `title_relation`; keep 35-50% breathing paper.
 - **Elements** — choose a mix from the `elements` kit within their `count` guidance: torn photo fragments (the subject), optional taped strips, one optional diagonal slab (the signature orientation event), flat spot circles/bands, a faint grid, a few register marks, optional outline rectangle, an optional large page number, optional rotated edge label. Don't overfill.
-- **Typography** — bold condensed/wide grotesk uppercase display + small mono support (dates, index, one large page number, one rotated edge label); scale 5:1..8:1; one orientation event.
-- **Annotations are generic** — dates, index, edge text and page numbers are editorial marks, never real brands/handles/URLs, never invented as fact.
+- **Typography** — the chosen `display_voices` entry, uppercase, as the single display voice + small mono support; scale 5:1..8:1; one orientation event.
+- **Annotations** — resolve the page number, dates, index and edge label per the Steering choice (exact values / model-invented generic / off). Invented ones are generic editorial marks only — never real brands/handles/URLs, never a date as a real event.
+- **No real logos** — any real-world object (car, sign, storefront, packaging) is kept generic: no brand badge, license plate, or readable trademark. Always add this to the negatives.
 
 ## Prompt Compiler
 
@@ -48,8 +51,8 @@ Five compact paragraphs, visible outcomes only; never name artists, studios, or 
 1. **Canvas & system:** ratio, substrate hex, the greyscale-plus-two-spot palette with each hex role-assigned, the editorial-collage character, flat front-facing page.
 2. **Composition:** the chosen composition's subject/empty balance and anchor, the element mix and where each sits, one focal event, one release zone of white, one diagonal/orientation disruption, 35-50% breathing paper.
 3. **Subject & treatment:** the subject rendered as greyscale photographic collage — torn fragments, taped strips, overlapping layers, photocopy grain; flat spot shapes behind; white paper cutting between fragments as real negative shapes.
-4. **Typography & words:** the display voice, the exact headline and any small labels, generic mono annotations (dates / index / rotated edge label / large page number), the scale jump.
-5. **Material & avoids:** grain, torn/taped edges, faint grid, register marks — then a hard-negative list.
+4. **Typography & words:** the chosen display voice (name it), the exact headline and any small labels, and the resolved annotations — either the user's exact page number/dates/index/edge label, or model-invented generic marks, or none. State the scale jump.
+5. **Material & avoids:** grain, torn/taped edges, faint grid, register marks — then a hard-negative list that always includes: greyscale photos only, no third spot colour, and **no real logos, brand badges, license plates, or readable trademarks on any object**; no real handles/URLs; no date as a real event.
 
 ## Originality & Annotations
 
@@ -96,7 +99,9 @@ End every delivery with a one-line self-check; flag and fix anything that fails 
 - Are the photographs greyscale, with colour only in at most two flat spot shapes?
 - Is 35-50% of the page breathing white/paper — dense collage, calm margins?
 - Is there one focal event and one orientation/diagonal event, not several competing angles?
-- Are all annotations generic (no real brand / handle / URL / invented fact)?
+- Are all annotations generic (no real brand / handle / URL / invented fact), and resolved per the Steering choice (exact / invented / off)?
+- Is the headline in the chosen display voice (not always the default condensed grotesk)?
+- Do real-world objects avoid real logos, badges, plates, or trademarks?
 - Is the subject preserved and any supplied headline verbatim?
 - Traditional-Chinese conversation, no China-specific wording (this user is in Taiwan)?
 
