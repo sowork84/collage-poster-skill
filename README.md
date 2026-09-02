@@ -4,6 +4,8 @@ A curated skill that generates **contemporary editorial photo-collage posters** 
 
 A **single-style, parametric generator**: the style is fixed, while the subject, palette, composition, elements, and ratio vary — so the look reproduces reliably across briefs.
 
+> _Built with AI assistance (Claude Code). The design system and creative decisions are human-directed; the example images are AI-generated._
+
 ## What it makes
 
 - Greyscale photographic collage — torn fragments, taped strips, overlapping layers, photocopy grain.
