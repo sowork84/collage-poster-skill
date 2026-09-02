@@ -90,11 +90,6 @@ Vertical 3:4 collage poster, newsprint-grey paper #ECEAE3. Greyscale photographi
 Vertical 3:4 collage poster, cool-white paper #F7F7F4. Greyscale photographic collage — a rabbit's-foot fern as an X-ray silhouette, an antique botany book, a microscope, gardening tools — torn taped fragments with grain. Two flat spots only: cobalt #2148B8 and terracotta #C65F38, as flat circles behind the photos. Central-stack composition, ~40% breathing white; faint grid, "x" marks, a large page number. Elegant high-contrast serif display headline "THE HIDDEN LIFE OF PLANTS" anchored to a corner; small mono scientific marks (specimen no., "40×", plate no.) and a rotated edge tag. Torn/taped edges, matte. Greyscale photos only, no third spot, no real logos/brands/trademarks.
 ```
 
-## Related skills
-
-- **poster-lab** — multi-style house generator (pick a whole style).
-- **poster-echo** — reference-driven: extract a reference image's system and apply it to your own subject.
-
 ## License
 
 Released under the [MIT License](LICENSE) — use, modify, and share freely, keeping the copyright notice.
