@@ -65,9 +65,9 @@ Sample prompts the skill produces (paste into any image tool). Each uses a diffe
 
 <table>
 <tr>
-<td width="33%"><img src="examples/literary-camellia.png" alt="Literary example" width="100%"></td>
-<td width="33%"><img src="examples/city-newyork.png" alt="City example" width="100%"></td>
-<td width="33%"><img src="examples/botanical-fern.png" alt="Botanical example" width="100%"></td>
+<td width="33%"><img src="examples/literary-camellia.jpg" alt="Literary example" width="100%"></td>
+<td width="33%"><img src="examples/city-newyork.jpg" alt="City example" width="100%"></td>
+<td width="33%"><img src="examples/botanical-fern.jpg" alt="Botanical example" width="100%"></td>
 </tr>
 <tr>
 <td align="center"><b>Literary</b></td>
