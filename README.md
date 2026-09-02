@@ -92,28 +92,6 @@ Vertical 3:4 collage poster, newsprint-grey paper #ECEAE3. Greyscale photographi
 Vertical 3:4 collage poster, cool-white paper #F7F7F4. Greyscale photographic collage — a rabbit's-foot fern as an X-ray silhouette, an antique botany book, a microscope, gardening tools — torn taped fragments with grain. Two flat spots only: cobalt #2148B8 and terracotta #C65F38, as flat circles behind the photos. Central-stack composition, ~40% breathing white; faint grid, "x" marks, a large page number. Elegant high-contrast serif display headline "THE HIDDEN LIFE OF PLANTS" anchored to a corner; small mono scientific marks (specimen no., "40×", plate no.) and a rotated edge tag. Torn/taped edges, matte. Greyscale photos only, no third spot, no real logos/brands/trademarks.
 ```
 
-## Updating
-
-The design system is data-driven, so most changes are edits to [`design-system/system.json`](design-system/system.json) — the source of truth. Add a `spot_palettes` entry, an `elements` part, a `compositions` entry, or a headline voice there rather than in prose.
-
-Workflow — **change → test → commit → push**:
-
-```bash
-cd ~/.claude/skills/collage-poster
-# edit design-system/system.json and/or SKILL.md
-git add -A
-git commit -m "what changed and why"
-git push
-```
-
-A few habits keep it clean:
-
-- **One change per commit**, with a message that says what and why — the history stays legible and any change is easy to roll back (`git revert`).
-- **Test before you push** — run the skill once and check the output before committing; don't push half-finished changes.
-- **Validate the JSON** after editing `system.json` (a broken file breaks the skill).
-- **Keep the docs in sync** — when you add a dimension (e.g. a 7th spot palette), update the design-system table and `style-system.svg` here too.
-- **New example images** go in `examples/` (web-sized PNGs; full-res sources are gitignored).
-
 ## License
 
 Released under the [MIT License](LICENSE) — use, modify, and share freely, keeping the copyright notice.
