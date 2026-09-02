@@ -1,8 +1,8 @@
 # collage-poster
 
-A curated [Claude](https://claude.ai/code) skill that generates **contemporary editorial photo-collage posters** — greyscale photographic fragments with up to two flat spot colours on near-white paper, torn-and-taped edges, a faint modular grid, register marks, and mono annotations. Pick a spot palette, composition, and ratio; the skill composes an original poster prompt for any subject.
+A curated skill that generates **contemporary editorial photo-collage posters** — greyscale photographic fragments with up to two flat spot colours on near-white paper, torn-and-taped edges, a faint modular grid, register marks, and mono annotations. Pick a spot palette, composition, and ratio; it composes an original poster prompt for any subject.
 
-It is a **single-style, parametric generator** (in the spirit of `mono-color`, but for the cut-and-paste collage look). The style is fixed; the subject, palette, composition, elements, and ratio vary — so the look reproduces reliably across briefs.
+A **single-style, parametric generator**: the style is fixed, while the subject, palette, composition, elements, and ratio vary — so the look reproduces reliably across briefs.
 
 ## What it makes
 
@@ -15,7 +15,7 @@ It produces a final image-generation prompt (and the image itself when an image 
 
 ## Install
 
-This is a Claude Code / Claude skill. Place the folder where your skills live:
+Place the folder where your agent's skills live:
 
 ```
 ~/.claude/skills/collage-poster/
@@ -56,7 +56,6 @@ The greyscale photographic base is a **constant**; colour lives only in the flat
 
 - **poster-lab** — multi-style house generator (pick a whole style).
 - **poster-echo** — reference-driven: extract a reference image's system and apply it to your own subject.
-- **mono-color** — one/two-ink editorial print posters.
 
 ## License
 
