@@ -60,4 +60,4 @@ The greyscale photographic base is a **constant**; colour lives only in the flat
 
 ## License
 
-Personal skill. Use and adapt freely.
+Released under the [MIT License](LICENSE) — use, modify, and share freely, keeping the copyright notice.
