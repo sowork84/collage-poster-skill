@@ -61,17 +61,23 @@ Sample prompts the skill produces (paste into any image tool). Each uses a diffe
 
 **Literary** — aubergine + gold, warm ivory, scattered field, condensed grotesk headline:
 
+![Literary collage poster example](examples/literary-camellia.png)
+
 ```text
 Vertical 3:4 collage poster, warm ivory paper #F4F0E7. Greyscale photographic collage — a girl in a high-collar coat, an antique clothbound novel, and a copper-engraved camellia — as torn taped fragments with photocopy grain. Two flat spot colours only: aubergine #63365F and muted gold #9C7A3C, as flat circles and a band behind the photos, never tinting them. Scattered fragment field, ~45% breathing paper; a faint grid, small "x" register marks, a large page number. Bold condensed grotesk headline "KNOWLEDGE BECOMES POWER" left-anchored; small mono labels and a rotated edge tag. Torn/taped edges, matte print. No colour in the photos, no third spot, no real logos/brands/URLs.
 ```
 
 **City** — mustard + cobalt, newsprint grey, diagonal cross, condensed grotesk headline:
 
+![City collage poster example](examples/city-newyork.png)
+
 ```text
 Vertical 3:4 collage poster, newsprint-grey paper #ECEAE3. Greyscale photographic collage of a city — a landmark tower, a street scene, a taxi — torn and taped with print grain. Two flat spots only: mustard #E3B23C and cobalt #2148B8, as flat circles and bands behind the photos. Diagonal-cross composition: one photo slab cuts across; ~35% breathing paper; faint grid, register marks, a large page number. Bold condensed grotesk "NEW YORK" bottom-left crossed by the slab; small mono dates and a rotated edge label. Torn edges, matte. Photos stay greyscale, no third spot, no real logos/brands/URLs, no license plates.
 ```
 
 **Botanical** — cobalt + terracotta, cool white, central stack, serif display headline:
+
+![Botanical collage poster example](examples/botanical-fern.png)
 
 ```text
 Vertical 3:4 collage poster, cool-white paper #F7F7F4. Greyscale photographic collage — a rabbit's-foot fern as an X-ray silhouette, an antique botany book, a microscope, gardening tools — torn taped fragments with grain. Two flat spots only: cobalt #2148B8 and terracotta #C65F38, as flat circles behind the photos. Central-stack composition, ~40% breathing white; faint grid, "x" marks, a large page number. Elegant high-contrast serif display headline "THE HIDDEN LIFE OF PLANTS" anchored to a corner; small mono scientific marks (specimen no., "40×", plate no.) and a rotated edge tag. Torn/taped edges, matte. Greyscale photos only, no third spot, no real logos/brands/trademarks.
