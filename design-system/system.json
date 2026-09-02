@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "note": "Curated single-style system for collage-poster: contemporary editorial photo-collage — greyscale photographic fragments plus at most two FLAT spot colours, on near-white paper, with torn/taped edges, a faint modular grid, register marks, and mono edge annotations. Like mono-color, this is ONE style explored across parametric dimensions so it reproduces reliably across subjects. SKILL.md prose explains intent; when a value conflicts, this file wins.",
+
+  "ratios": {
+    "default": "3:4",
+    "options": {
+      "poster_portrait": {"ratio": "3:4", "use_for": "portfolio / print poster (default)"},
+      "poster_tall": {"ratio": "2:3", "use_for": "tall print poster"},
+      "social_portrait": {"ratio": "4:5", "use_for": "Instagram / Threads feed portrait"},
+      "social_square": {"ratio": "1:1", "use_for": "Instagram / Facebook square feed"},
+      "social_story": {"ratio": "9:16", "use_for": "IG / TikTok story & reel, full-screen vertical"},
+      "landscape": {"ratio": "16:9", "use_for": "YouTube thumbnail, X / slide, banner"},
+      "wide_social": {"ratio": "1.91:1", "use_for": "Facebook / LinkedIn link card"},
+      "substack_cover": {"ratio": "1456:1048", "approx": "~1.4:1 landscape", "use_for": "Substack post cover / featured image", "note": "Commonly-cited Substack featured-image size; confirm against the current Substack spec before final upload."}
+    },
+    "note": "Offer ratio as a choice at the Steering step EVERY time (portrait / social / landscape / Substack presets), not only when missing. The composition adapts to the ratio: landscape (16:9, 1.91:1, Substack ~1.4:1) spreads the collage horizontally, rebalances the anchor/diagonal, and moves the headline to a side rather than stacking; square centres the stack; 9:16 stacks fragments vertically with more breathing top and bottom; 4:5 is a gentle portrait crop of 3:4."
+  },
+
+  "defaults": {
+    "substrate_id": "bright_white",
+    "spot_palette_id": "classic_mustard_brick",
+    "composition_id": "central_stack",
+    "ratio": "3:4",
+    "empty_percent": [35, 50],
+    "note": "Deterministic: same brief resolves the same look. The greyscale photographic base is constant; only the spot palette, composition and element mix vary."
+  },
+
+  "substrates": [
+    {"id": "bright_white", "name": "Bright White", "hex": "#FCFCFA", "use_for": ["clean contemporary", "gallery", "high-contrast spots"]},
+    {"id": "warm_ivory", "name": "Warm Ivory", "hex": "#F4F0E7", "use_for": ["editorial warmth", "softer collage"]},
+    {"id": "newsprint_grey", "name": "Newsprint Grey", "hex": "#ECEAE3", "use_for": ["zine", "analog print", "recycled feel"]}
+  ],
+
+  "greyscale_base": {
+    "ink": "#2E2E30",
+    "note": "The photographic collage is ALWAYS greyscale charcoal — this is the constant of the style. Spot colours are separate flat shapes; they never tint the photos."
+  },
+
+  "spot_palettes": [
+    {"id": "house_cobalt_terracotta", "set": "house-warm", "spots": [{"hex": "#2148B8", "name": "Cobalt"}, {"hex": "#C65F38", "name": "Terracotta"}], "mood": "house style, warm-not-harsh, portfolio"},
+    {"id": "house_aubergine_gold", "set": "house-warm", "spots": [{"hex": "#63365F", "name": "Aubergine"}, {"hex": "#9C7A3C", "name": "Muted Gold"}], "mood": "night, literary, refined"},
+    {"id": "house_terracotta_mono", "set": "house-warm", "spots": [{"hex": "#C65F38", "name": "Terracotta"}], "mood": "single warm spot, quietest"},
+    {"id": "classic_mustard_brick", "set": "collage-bright", "spots": [{"hex": "#E3B23C", "name": "Mustard"}, {"hex": "#C0392B", "name": "Brick Red"}], "mood": "classic zine collage, lively"},
+    {"id": "classic_cobalt_coral", "set": "collage-bright", "spots": [{"hex": "#2148B8", "name": "Cobalt"}, {"hex": "#E0503C", "name": "Coral"}], "mood": "bold, contemporary, riso"},
+    {"id": "classic_mustard_cobalt", "set": "collage-bright", "spots": [{"hex": "#E3B23C", "name": "Mustard"}, {"hex": "#2148B8", "name": "Cobalt"}], "mood": "high-contrast complementary"}
+  ],
+  "spot_rules": [
+    "At most TWO spot colours, always as FLAT shapes (circles, bands, blocks) — never as a tint on the photographs.",
+    "The photographs stay greyscale; colour lives only in the flat spot shapes and, optionally, one small element that keeps its natural colour if it ties to a spot.",
+    "Spots sit behind or beside the greyscale fragments, not over the whole page."
+  ],
+
+  "elements": [
+    {"id": "torn_photo_fragment", "name": "Torn Photo Fragment", "role": "the subject, as a greyscale cut-out with a torn or rough edge", "count": "1-3", "note": "primary subject carrier"},
+    {"id": "taped_strip", "name": "Taped Strip", "role": "a strip of photo or paper that looks taped down", "count": "0-2"},
+    {"id": "diagonal_photo_slab", "name": "Diagonal Photo Slab", "role": "a long rectangular photo band crossing the composition on a diagonal", "count": "0-1", "note": "the signature orientation event"},
+    {"id": "flat_spot_circle", "name": "Flat Spot Circle", "role": "a flat circle in a spot colour sitting behind fragments", "count": "1-3"},
+    {"id": "flat_spot_band", "name": "Flat Spot Band", "role": "a flat rectangle/band in a spot colour", "count": "0-2"},
+    {"id": "faint_grid", "name": "Faint Grid", "role": "a very light modular grid or small grid squares under the collage", "count": "background"},
+    {"id": "register_marks", "name": "Register Marks", "role": "small 'x' marks or crop corners, print-shop feel", "count": "2-5"},
+    {"id": "outline_rectangle", "name": "Outline Rectangle", "role": "a thin unfilled rectangle framing or offsetting an element", "count": "0-2"},
+    {"id": "page_number", "name": "Page Number", "role": "a large index/page-style number, usually a corner", "count": "0-1"},
+    {"id": "rotated_edge_text", "name": "Rotated Edge Text", "role": "small mono text set vertically along a side edge", "count": "0-2", "note": "generic label only — never a real brand/handle/URL"}
+  ],
+
+  "compositions": [
+    {"id": "central_stack", "layout": "central stacked collage", "subject_percent": [55, 70], "empty_percent": [30, 45], "anchor": "centre", "title_relation": "big display anchored to a bottom corner; small labels orbit the stack", "note": "fragments overlap in a central vertical band"},
+    {"id": "diagonal_cross", "layout": "diagonal slab cross", "subject_percent": [55, 70], "empty_percent": [30, 45], "anchor": "diagonal", "title_relation": "headline meets or is crossed by the diagonal slab", "note": "one photo slab cuts across the subject"},
+    {"id": "scattered_field", "layout": "scattered fragment field", "subject_percent": [45, 60], "empty_percent": [40, 55], "anchor": "edge", "title_relation": "labels and dates scatter to the margins; one big display at an edge", "note": "fragments and spots spread with intentional white gaps"}
+  ],
+
+  "typography": {
+    "display": "bold condensed or wide grotesk, uppercase; the headline anchors a corner or crosses a fragment",
+    "support": "small monospaced or plain grotesk — dates, an index number, a large page number, and a rotated vertical edge label",
+    "scale_ratio": "5:1..8:1",
+    "orientation": "one orientation event max — the rotated vertical edge text is the usual one",
+    "note": "One display voice. Numbers (dates, index, page) are part of the look; keep them small except one large page-style figure."
+  },
+
+  "treatment": "greyscale photographic collage — torn photo fragments, taped strips, overlapping layers, subtle photocopy grain and print texture; flat spot shapes behind",
+  "texture": "photocopy/print grain, torn and taped edges, faint grid lines, register marks, slight analog imperfection",
+  "mood": ["editorial", "contemporary", "analog-meets-digital", "curated", "zine"],
+
+  "rules": [
+    "Photographs are greyscale only; colour lives in at most two flat spot shapes.",
+    "Keep 35-50% of the page as breathing white/paper — the collage is dense but the margins are calm.",
+    "One diagonal or orientation event, not several competing angles.",
+    "A faint grid plus a few register marks give the analog print feel — do not overfill with marks.",
+    "All annotations (dates, index, edge text, page number) are GENERIC editorial marks — never a real brand, handle, or URL, and never invented as if factual.",
+    "Torn/taped edges and grain carry the handmade feel; avoid glossy clean vector flatness."
+  ]
+}
