@@ -1,5 +1,7 @@
 # collage-poster
 
+![collage-poster — a curated editorial photo-collage poster skill](examples/collage-poster-skill-banner.jpg)
+
 A curated skill that generates **contemporary editorial photo-collage posters** — greyscale photographic fragments with up to two flat spot colours on near-white paper, torn-and-taped edges, a faint modular grid, register marks, and mono annotations. Pick a spot palette, composition, and ratio; it composes an original poster prompt for any subject.
 
 A **single-style, parametric generator**: the style is fixed, while the subject, palette, composition, elements, and ratio vary — so the look reproduces reliably across briefs.
