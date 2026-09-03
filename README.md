@@ -17,6 +17,17 @@ A **single-style, parametric generator**: the style is fixed, while the subject,
 
 It produces a final image-generation prompt (and the image itself when an image tool is available). It does **not** clone any specific existing poster.
 
+## Using the output
+
+The skill's core deliverable is a **ready-to-paste image prompt**. It stays tool-agnostic — copy the prompt into whatever image generator you use:
+
+- **OpenAI** (ChatGPT / DALL·E / the images API)
+- **Midjourney**
+- **Google** (Gemini / Imagen)
+- **Stable Diffusion**, Adobe Firefly, or any other text-to-image tool
+
+If your agent already has an image-generation tool connected, it will render the poster directly; otherwise it hands you the prompt to paste in yourself. Aspect ratios are given as plain values (e.g. `3:4`, `16:9`) — map them to your tool's own flag or field (Midjourney's `--ar 3:4`, an aspect-ratio picker, etc.).
+
 ## Install
 
 Place the folder where your agent's skills live:
