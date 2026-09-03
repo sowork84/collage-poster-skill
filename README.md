@@ -40,7 +40,7 @@ All parameters live in [`design-system/system.json`](design-system/system.json) 
 | **Elements** (10) | torn photo fragment, taped strip, diagonal slab, flat spot circle, flat spot band, faint grid, register marks, outline rectangle, page number, rotated edge text |
 | **Compositions** (3) | central stack · diagonal cross · scattered field |
 | **Headline voices** (4) | condensed grotesk · wide grotesk · serif display · slab serif |
-| **Ratios** (8) | 3:4, 2:3, 4:5, 1:1, 9:16, 16:9, 1.91:1, and a Substack cover (~1.4:1, 1456×1048) |
+| **Ratios** (8) | 3:4, 2:3, 4:5, 1:1, 9:16, 16:9, 1.91:1, and a Substack cover (14:10 / ~1.4:1, 1456×1048) |
 
 The greyscale photographic base is a **constant**; colour lives only in the flat spot shapes.
 
