@@ -1,6 +1,6 @@
 ---
 name: collage-poster
-description: Generate original contemporary editorial photo-collage posters — greyscale photographic fragments plus at most two flat spot colours, on near-white paper, with torn/taped edges, a faint modular grid, register marks, and mono edge annotations. A curated single-style generator (like mono-color, but for the cut-and-paste collage look), driven by design-system/system.json. Use when the user wants a collage poster, cut-out / cutout collage, zine cover, mixed-media key visual, "拼貼海報", "剪貼風", "zine 風格", or a poster in the torn-photo-plus-spot-colour editorial style — for any subject. Produces a final image-generation prompt (and the image when generation is available). For turning an arbitrary reference image into a poster, use poster-echo; for the multi-style house generator, use poster-lab.
+description: Generate original contemporary editorial photo-collage posters — greyscale photographic fragments plus at most two flat spot colours, on near-white paper, with torn/taped edges, a faint modular grid, register marks, and mono edge annotations. A curated single-style generator driven by design-system/system.json. Use when the user wants a collage poster, cut-out / cutout collage, zine cover, mixed-media key visual, "拼貼海報", "剪貼風", "zine 風格", or a poster in the torn-photo-plus-spot-colour editorial style — for any subject. Produces a final image-generation prompt (and the image itself when an image-generation tool is available).
 ---
 
 # Collage Poster
@@ -58,11 +58,11 @@ Five compact paragraphs, visible outcomes only; never name artists, studios, or 
 
 - Recombine into a new composition; never reproduce a specific existing poster's layout, lettering, or marks.
 - All annotations are GENERIC — never a real brand, @handle, URL, or a fact invented as if true (no fake dates presented as real events).
-- For portfolio publication, run the user's disclosure/verification gate at `200_Reference/templates/ai-disclosure.md`.
+- For public / portfolio publication, disclose that AI assisted the work and verify no real brand, handle, URL, or invented-as-factual detail slipped in — run whatever disclosure/verification checklist you keep.
 
 ## Generation & Inspection
 
-1. Generate when a tool is available; otherwise deliver prompt-only and say so.
+1. Generate with whatever image-generation tool your agent has; if none is available, deliver the prompt only and say so.
 2. Inspect full size + thumbnail. Regenerate once if: colour bled into the photos (they must stay greyscale), more than two spot colours appeared, the page is overfilled with no breathing white, there's no single focal event, the subject is unrecognizable, long text is garbled, or a real brand/URL leaked in.
 3. If exact text renders wrong after one retry, deliver a text-light base and say to set type in a layout tool.
 
@@ -107,4 +107,4 @@ End every delivery with a one-line self-check; flag and fix anything that fails 
 
 ## Extending
 
-Edit `design-system/system.json`: add a `spot_palettes` entry (≤2 flat spots + hexes), an `elements` part (role + count), or a `compositions` entry (subject/empty % + anchor + title_relation). Keep entries shaped like their neighbours. Two spot sets ship: `house-warm` (from Sophie's ink library) and `collage-bright` (classic zine brights).
+Edit `design-system/system.json`: add a `spot_palettes` entry (≤2 flat spots + hexes), an `elements` part (role + count), or a `compositions` entry (subject/empty % + anchor + title_relation). Keep entries shaped like their neighbours. Two spot sets ship: `house-warm` (warm, muted, portfolio-friendly) and `collage-bright` (classic zine brights).

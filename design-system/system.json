@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "note": "Curated single-style system for collage-poster: contemporary editorial photo-collage — greyscale photographic fragments plus at most two FLAT spot colours, on near-white paper, with torn/taped edges, a faint modular grid, register marks, and mono edge annotations. Like mono-color, this is ONE style explored across parametric dimensions so it reproduces reliably across subjects. SKILL.md prose explains intent; when a value conflicts, this file wins.",
+  "note": "Curated single-style system for collage-poster: contemporary editorial photo-collage — greyscale photographic fragments plus at most two FLAT spot colours, on near-white paper, with torn/taped edges, a faint modular grid, register marks, and mono edge annotations. This is ONE style explored across parametric dimensions so it reproduces reliably across subjects. SKILL.md prose explains intent; when a value conflicts, this file wins.",
 
   "ratios": {
     "default": "3:4",
@@ -12,7 +12,7 @@
       "social_story": {"ratio": "9:16", "use_for": "IG / TikTok story & reel, full-screen vertical"},
       "landscape": {"ratio": "16:9", "use_for": "YouTube thumbnail, X / slide, banner"},
       "wide_social": {"ratio": "1.91:1", "use_for": "Facebook / LinkedIn link card"},
-      "substack_cover": {"ratio": "1456:1048", "approx": "~1.4:1 landscape", "use_for": "Substack post cover / featured image", "note": "Commonly-cited Substack featured-image size; confirm against the current Substack spec before final upload."}
+      "substack_cover": {"ratio": "1456:1048", "approx": "14:10 (~1.4:1) landscape", "use_for": "Substack post cover / featured image", "note": "Substack's recommended featured/cover image size — 14:10 aspect ratio, per Substack's 2026 image-size guidance."}
     },
     "note": "Offer ratio as a choice at the Steering step EVERY time (portrait / social / landscape / Substack presets), not only when missing. The composition adapts to the ratio: landscape (16:9, 1.91:1, Substack ~1.4:1) spreads the collage horizontally, rebalances the anchor/diagonal, and moves the headline to a side rather than stacking; square centres the stack; 9:16 stacks fragments vertically with more breathing top and bottom; 4:5 is a gentle portrait crop of 3:4."
   },
